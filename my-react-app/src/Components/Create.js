@@ -53,6 +53,8 @@ function Create() {
       Currency: "MATIC"
     };
     localStorage.setItem('NetworkDetails', JSON.stringify(NetworkDetails));
+    handleUpdateWebhook();
+
     getNext()
   }
 
@@ -65,6 +67,42 @@ function Create() {
         console.error('Error copying to clipboard:', err);
       });
   }
+
+  const handleUpdateWebhook = async () => {
+
+
+    fetch('https://f0f9-182-156-224-114.ngrok-free.app/update-webhook-addresses', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        "ngrok-skip-browser-warning": "69420"
+      } ,
+      body: JSON.stringify({
+        Webhook_id: 'wh_l14yiex6ugk9ef1y',
+        To_add: [Address],
+        To_remove: [],
+      }),
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+      })
+      .catch(error => {
+        console.error(error.message);
+      });
+
+    // fetch(`https://f0f9-182-156-224-114.ngrok-free.app/api/update-webhook-addresses?address=${Address}`, {
+    //   method : "POST",
+    //   headers: new Headers({
+    //     "ngrok-skip-browser-warning": "69420"
+    //   })
+    // })
+    //   .then(response => response.json())
+    //   .then(data => {
+    //     console.log(data);
+    //   });
+  };
+
 
   return (
     <div className="create-backcard">
