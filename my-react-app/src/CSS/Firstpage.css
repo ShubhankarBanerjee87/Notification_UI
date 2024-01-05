@@ -1,0 +1,38 @@
+body {
+    background-color :#EBEFF2;
+    height: 100%;
+}
+
+.backcard {
+    height : 500px;
+    width: 400px;
+    background-color: #ECF0F2; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 10px 10px 20px #D3DBE7, -0.5rem -0.5rem 20px white;
+}
+
+.center-align {
+    width: fit-content;
+    margin: auto;
+}
+
+.top-align{
+    width: 100%;
+    position: relative;
+    top: 20%;
+}
+
+.button-container{
+    width: 60%;
+    margin: 10px auto;
+}
+.set-button{
+    width: 100%;
+    margin-top: 5%;
+}
+.logo {
+    margin-top: 5px;
+}

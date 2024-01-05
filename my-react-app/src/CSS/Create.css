@@ -1,0 +1,88 @@
+body {
+    background-color :#EBEFF2;
+    height: 100%;
+}
+
+.create-backcard {
+    height : 650px;
+    width: 500px;
+    background-color: #ECF0F2; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 10px 10px 20px #D3DBE7, -0.5rem -0.5rem 20px white;
+}
+
+.create-backButton {
+    margin-top: 15px;
+    border: none;
+    background: none;
+    max-height: 70px;
+    max-width: 70px;
+}
+
+.create-center-align {
+    width: fit-content;
+    margin: auto;
+}
+
+.create-top-align{
+    width: 100%;
+    position: relative;
+    top: 2%;
+}
+
+.your-passphrase {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h6 {
+    width: fit-content;
+    margin: auto;
+}
+
+p {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.padding-change {
+    padding: 0rem 1rem;
+}
+
+.border-radius-change {
+    border-radius: 10px;
+}
+
+.down-buttons {
+    width: 80%;
+    margin: 45px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.bttn {
+    margin-left: 6rem;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: 50px;
+  }
+
+  .phrase {
+    background-color: rgba(209, 216, 219, 0.907);
+    border-radius: 20px;
+    text-align : center;
+    color: black;
+    font-weight: 600;
+  }
